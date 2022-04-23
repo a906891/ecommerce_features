@@ -34,10 +34,10 @@ class _Cart_ScreenState extends State<Cart_Screen> {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
-                        "My Cart items (3)",
-                        style: TextStyle(
+                        "My Cart items ($quantity)",
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
