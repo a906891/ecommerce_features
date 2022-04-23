@@ -8,6 +8,12 @@ class WishListItem extends StatefulWidget {
 }
 
 class _WishListItemState extends State<WishListItem> {
+  String? nameOfItem = "Monthly Pass";
+  int? amountOfItem = 29;
+  String? preparedBy = "LRNR.in";
+  String? imageOfItem = "images/monthlypass.png";
+
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +24,7 @@ class _WishListItemState extends State<WishListItem> {
             children:  [
 
               ClipRRect(
-                child: Image.asset("images/monthlypass.png",
+                child: Image.asset(imageOfItem!,
                   height: 80.0,),
                 borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
@@ -28,23 +34,23 @@ class _WishListItemState extends State<WishListItem> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  Text("Monthly Pass",
-                    style: TextStyle(
+                children: [
+                  Text(nameOfItem!,
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold
                     ),),
 
                   SizedBox(height: 5.0,),
 
-                  Text("Rs 29",
-                    style: TextStyle(
+                  Text("Rs $amountOfItem",
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold
                     ),),
 
-                  SizedBox(height: 5.0,),
+                  const SizedBox(height: 5.0,),
 
-                  Text("Prepared by: LRNR.in",
-                    style: TextStyle(
+                  Text("Prepared by: $preparedBy",
+                    style: const TextStyle(
                         color: Colors.grey,
                         fontSize: 12
                     ),),
