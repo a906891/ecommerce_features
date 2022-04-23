@@ -57,24 +57,13 @@ class _WishListItemState extends State<WishListItem> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children:  [
-              TextButton(
-                onPressed: () {
 
-                },
-                child:const Text("REMOVE",
-                  style: TextStyle(
-                      color: Colors.black54
-                  ),
-                ),
-              ),
-
-              const SizedBox(width: 70,),
 
               TextButton(
                 onPressed: () {
 
                 },
-                child:const Text("MOVE TO WISHLIST",
+                child:const Text("REMOVE FROM WISHLIST",
                   style: TextStyle(
                       color: Colors.black54
                   ),
