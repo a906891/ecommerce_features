@@ -12,14 +12,10 @@ class Cart_Screen extends StatefulWidget {
 }
 
 class _Cart_ScreenState extends State<Cart_Screen> {
+
   int totalAmount = 438;
   int quantity = 2;
 
-  List<String> imageslist = [
-    "images/2.png",
-    "images/3.png",
-    "images/download.png"
-  ];
 
   @override
   Widget build(BuildContext context) {
