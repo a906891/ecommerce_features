@@ -40,7 +40,7 @@ class _WishListItemState extends State<WishListItem> {
                         fontWeight: FontWeight.bold
                     ),),
 
-                  SizedBox(height: 5.0,),
+                  const SizedBox(height: 5.0,),
 
                   Text("Rs $amountOfItem",
                     style: const TextStyle(
