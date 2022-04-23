@@ -56,7 +56,6 @@ class _WishListItemState extends State<WishListItem> {
                     ),),
                 ],
               )
-
             ],
           ),
 
