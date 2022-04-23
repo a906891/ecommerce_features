@@ -8,7 +8,7 @@ class MyOrderItem extends StatefulWidget {
 }
 
 class _MyOrderItemState extends State<MyOrderItem> {
-  String? nameOfItem = "Monthly Pass";
+  String? nameOfItem = "Monthly Pass For Month users";
   int? amountOfItem = 29;
   String? preparedBy = "LRNR.in";
   String? imageOfItem = "images/monthlypass.png";
@@ -47,19 +47,33 @@ class _MyOrderItemState extends State<MyOrderItem> {
             ],
           ),
 
-          const SizedBox(height: 40.0,),
+          const SizedBox(height: 20.0,),
 
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const SizedBox(width: 40.0,),
-              Text("Rs $amountOfItem",
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                  color: Colors.black54
-                ),),
+              Expanded(
+                child: Text("Rs $amountOfItem",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                    color: Colors.black54
+                  ),),
+              ),
+               
+               const Expanded(
+                 child: Text("Order Placed",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54
+                  ),),
+               ),
+
             ],
           ),
           const SizedBox(height: 20.0,),
+
+
 
         ]);
   }

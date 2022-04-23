@@ -9,6 +9,8 @@ class MyOrdersScreen extends StatefulWidget {
 }
 
 class _MyOrdersScreenState extends State<MyOrdersScreen> {
+  int orderPlaced = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,10 +18,32 @@ class _MyOrdersScreenState extends State<MyOrdersScreen> {
           child: Column(
 
             children: [
+
+              Padding(
+                padding:const EdgeInsets.fromLTRB(50, 30, 50, 0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+
+                    Text("$orderPlaced Order"
+                    ,style: const TextStyle(
+                        color: Colors.black54,
+                          fontFamily: 'Righteous'
+                      ),),
+
+                    const Text("Apr 23, 2022, 05:06 PM"
+                      ,style: TextStyle(
+                          color: Colors.black54,
+                        fontFamily: 'Righteous'
+                      ),)
+                  ],
+                ),
+              ),
+
               ListView.builder(itemBuilder: (buildContext,index){
 
                 return const Card(
-                    margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
+                  shadowColor: Colors.black54,
                     child: MyOrderItem()
                 );
               },
