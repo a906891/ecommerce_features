@@ -1,5 +1,6 @@
 
 import 'package:ecommerce_features/cart_tabs/cart_screen.dart';
+import 'package:ecommerce_features/order_tabs/my_orders.dart';
 import 'package:ecommerce_features/wishlist_tabs/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,7 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
         children: const [
           WishList(),
           Cart_Screen(),
-          WishList(),
+          MyOrdersScreen(),
           Cart_Screen()
         ],
       ),
