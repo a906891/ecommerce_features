@@ -1,3 +1,4 @@
+import 'package:ecommerce_features/cart_tabs/cart_item.dart';
 import 'package:ecommerce_features/wishlist_tabs/wishlist_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -64,10 +65,10 @@ class _Cart_ScreenState extends State<Cart_Screen> {
 
               ListView.builder(
                 itemBuilder: (buildContext, index) {
-                  return Card(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(15.0,15.0,10.0,0),
-                      child: WishListItem(),
+                  return const Card(
+                    child:  Padding(
+                      padding: EdgeInsets.fromLTRB(15.0,15.0,10.0,0),
+                      child: CartItem(),
                     ),
                   );
                 },
